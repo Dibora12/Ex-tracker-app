@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5c7d0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a4b0;
+}
+
+/* Dashboard specific styles */
+.dashboard-container {
+  font-family: "Inter", sans-serif;
+}
+
+/* Metric card hover effect */
+.metric-card {
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+
+.metric-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Chart bar animation */
+.chart-bar {
+  transition:
+    height 0.5s ease-out,
+    background-color 0.3s ease;
+}
+
+.chart-bar:hover {
+  background-color: #6366f1;
+}
+
+/* Activity item hover effect */
+.activity-item {
+  transition: background-color 0.2s ease;
+}
+
+.activity-item:hover {
+  background-color: #f9fafb;
+}
+
+/* Button hover effects */
+.dashboard-btn {
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
+}
+
+.dashboard-btn:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-btn:active {
+  transform: translateY(0);
+}
+
+/* Primary button specific styles */
+.primary-btn {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #4338ca;
+}
+
+/* Secondary button specific styles */
+.secondary-btn {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+}
+
+.secondary-btn:hover {
+  background-color: #f9fafb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 16px;
+  }
+}
